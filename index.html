@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash Billing Manager</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="https://kit.fontawesome.com/441a130e90.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Cash Billing Manager</h1>
+        <p>Enter the Bill Amount and Cash given by the Customer and know Minimum Number of Notes to Return Back.</p>
+        
+        <label for="bill-amount">Bill amount</label><br>
+        <input id="bill-amount" placeholder="Enter Amount" type="number"><br>
+
+        <button id="next-btn">Next</button><br>
+        
+        <label id="cash-given-label" for="cash-given">Cash Given</label><br>
+        <input id="cash-given" min="0" placeholder="Enter Amount" type="number"><br>
+
+        <h2 id="error"></h2>
+
+        <button id="check-btn">Check</button>
+
+        <table id="notes-table">
+            <caption class="table-caption">Amount to be Returned Back :- <span id="return"></span></caption>
+            <tr>
+                <th class="table-data t-head">Notes</th>
+                <td class="table-data">2000</td>
+                <td class="table-data">500</td>
+                <td class="table-data">200</td>
+                <td class="table-data">100</td>
+                <td class="table-data">50</td>
+                <td class="table-data">20</td>
+                <td class="table-data">10</td>
+                <td class="table-data">5</td>
+                <td class="table-data">1</td>
+            </tr>
+            <tr>
+                <th class="table-data t-head">No. of Notes</th>
+                <td class="notes table-data"></td>
+                <td class="notes table-data"></td>
+                <td class="notes table-data"></td>
+                <td class="notes table-data"></td>
+                <td class="notes table-data"></td>
+                <td class="notes table-data"></td>
+                <td class="notes table-data"></td>
+                <td class="notes table-data"></td>
+                <td class="notes table-data"></td>
+            </tr>
+        </table>
+    </div>
+    <script src="/app.js"></script>
+</body>
+</html>
